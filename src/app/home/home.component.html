@@ -1,0 +1,55 @@
+<div class="row text-center" style="height: 100vh; background-color: #313E50;">
+    <h1 class="mt-5" style="color: white;">ARCANA System</h1>
+    <div class="row">
+        <div class="col">
+            <button type="button" class="btn btn-lg shadow p-2 rounded" style="background-color: #0E86D4; color: white;" data-bs-toggle="modal"  data-bs-target="#select">Select Project</button>
+            <button type="button" class="btn btn-lg shadow p-2 rounded" style="background-color: #0E86D4; color: white; margin-left: 70px;" data-bs-toggle="modal" data-bs-target="#create">Create Project</button>
+        </div>
+    </div>
+</div>
+
+  
+  <!-- Select Project -->
+  <div class="modal fade"  id="select" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content" style="background-color: #313E50; color: white;">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Select Project</h1>
+          <button type="button" class="btn-close btn-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <label for="Dcreated">Project Name:</label>
+            <input style="width: 70%; margin-left: 10px;"><br><br>
+            <label for="Dcreated">Log Directory:</label>
+            <input #fileInput type="file"  style="width: 70%; margin-left: 10px;"><br><br>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary" data-bs-dismiss="modal" [routerLink]="['../events']">Select</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Create project -->
+
+  <div class="modal fade"  id="create" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content" style="background-color: #313E50; color: white;">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Create Project</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <label for="Dcreated">Project Name:</label>
+            <input style="width: 70%; margin-left: 10px;"><br><br>
+            <label for="Dcreated">Log Directory:</label>
+            <input #fileInput type="file"  style="width: 70%; margin-left: 10px;"><br><br>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary" data-bs-dismiss="modal" [routerLink]="['../events']">Create</button>
+        </div>
+      </div>
+    </div>
+  </div>
